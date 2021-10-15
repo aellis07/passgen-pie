@@ -107,8 +107,11 @@ function generatePassword() {
     uppercase === false &&
     number === false &&
     special === false
-  )
-    // Add event listener to generate button
-    // Carries out the function when the button is clicked
-    generateBtn.addEventListener("click", writePassword);
+  ) {
+    alert("You must choose at least one parameter");
+  }
+
+  // Add event listener to generate button
+  // Carries out the function when the button is clicked
+  generateBtn.addEventListener("click", writePassword);
 }
