@@ -96,6 +96,12 @@ function generatePassword() {
       "How many characters would you like your password to contain?"
     );
   }
+
+  var lowercase = confirm("Click OK if you want lower case");
+  var uppercase = confirm("Click OK if you want upper case");
+  var number = confirm("Click OK if you want numbers");
+  var special = confirm("Click OK if you want special characters ");
+
   // Add event listener to generate button
   // Carries out the function when the button is clicked
   generateBtn.addEventListener("click", writePassword);
