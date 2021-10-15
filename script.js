@@ -73,22 +73,17 @@ var upperChar = [
 console.log(upperChar);
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 console.log(number);
-var specialChar = [
-  "!",
-  "%",
-  "&",
-  ",",
-  "*",
-  "+",
-  "-",
-  ".",
-  "/",
-  "<",
-  ">",
-  "?",
-  "~",
-];
+var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 console.log(specialChar);
+
+var lowercase;
+console.log(lowercase);
+var uppercase;
+console.log(uppercase);
+var number;
+console.log(number);
+var special;
+console.log(special);
 
 function generatePassword() {
   // Add event listener to generate button
