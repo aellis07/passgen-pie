@@ -92,6 +92,9 @@ function generatePassword() {
   );
   while (passlength <= 8 || passlength >= 128) {
     alert("Password length must be between 8-50 characters Try again");
+    var passlength = prompt(
+      "How many characters would you like your password to contain?"
+    );
   }
   // Add event listener to generate button
   // Carries out the function when the button is clicked
