@@ -72,7 +72,7 @@ var upperChar = [
 ];
 console.log(upperChar);
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-console.log(number);
+console.log(numberChar);
 var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 console.log(specialChar);
 
@@ -112,16 +112,32 @@ function generatePassword() {
     var lowercase = confirm(
       "Click OK if you want to include lowercase characters"
     );
-    var confirmNumericCharacter = confirm(
+    var uppercase = confirm(
       "Click OK if you want to include uppercase characters"
     );
-    var confirmLowerCase = confirm(
-      "Click OK if you want to include numeric characters"
-    );
-    var confirmUpperCase = confirm(
-      "Click OK if you want to include special characters"
-    );
+    var number = confirm("Click OK if you want to include numeric characters");
+    var special = confirm("Click OK if you want to include special characters");
   }
+
+  var passChar = [];
+
+  if (lowercase) {
+    passChar = passwordCharacters.concat(lowerChar);
+  }
+
+  if (uppercase) {
+    passChar = passwordCharacters.concat(upperChar);
+  }
+
+  if (number) {
+    passChar = passwordCharacters.concat(numberChar);
+  }
+
+  if (special) {
+    passChar = passwordCharacters.concat(specialChar);
+  }
+
+  console.log(passChar);
 
   // Add event listener to generate button
   // Carries out the function when the button is clicked
