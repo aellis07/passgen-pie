@@ -77,7 +77,7 @@ function generatePassword() {
   var passLength = prompt(
     "Choose a password length at least 8 characters long"
   );
-
+  console.log(passLength);
   // while loop that will continue to loop until a valid submission is submitted
   while (passLength <= 8 || passLength >= 128) {
     alert("Password length must be between 8-50 characters Try again");
@@ -121,19 +121,15 @@ function generatePassword() {
   if (lowercase) {
     passChar = passChar.concat(lowerChar);
   }
-
   if (uppercase) {
     passChar = passChar.concat(upperChar);
   }
-
   if (number) {
     passChar = passChar.concat(numberChar);
   }
-
   if (special) {
     passChar = passChar.concat(specialChar);
   }
-
   console.log(passChar);
 
   var randomPassword = "";
