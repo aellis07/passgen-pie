@@ -4,6 +4,13 @@ var generateBtn = document.querySelector("#generate");
 
 //GLOBAL VARIABLES/ARRAYS
 
+// declaring variables
+var lowerCase;
+var upperCase;
+var numberC;
+var specialC;
+var passLength = "";
+
 // Declaring arrays
 var numberChar = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
@@ -63,13 +70,6 @@ var upperChar = [
   "Y",
   "Z",
 ];
-
-// declaring variables
-var lowerCase;
-var upperCase;
-var numberC;
-var specialC;
-var passLength = "";
 
 //Funtion to generate password
 function generatePassword() {
