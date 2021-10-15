@@ -84,6 +84,7 @@ var number;
 console.log(number);
 var special;
 console.log(special);
+var length = "";
 
 function generatePassword() {
   // Add event listener to generate button
