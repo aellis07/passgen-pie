@@ -90,8 +90,10 @@ function generatePassword() {
   var passlength = prompt(
     "Choose a password length at least 8 characters long"
   );
-  while (passlength <= 8 || passlength >= 128)
-    // Add event listener to generate button
-    // Carries out the function when the button is clicked
-    generateBtn.addEventListener("click", writePassword);
+  while (passlength <= 8 || passlength >= 128) {
+    alert("Password length must be between 8-50 characters Try again");
+  }
+  // Add event listener to generate button
+  // Carries out the function when the button is clicked
+  generateBtn.addEventListener("click", writePassword);
 }
