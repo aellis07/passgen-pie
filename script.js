@@ -84,9 +84,13 @@ var number;
 console.log(number);
 var special;
 console.log(special);
-var length = "";
+var passlength = "";
 
 function generatePassword() {
+  var passlength = prompt(
+    "Choose a password length at least 8 characters long"
+  );
+
   // Add event listener to generate button
   // Carries out the function when the button is clicked
   generateBtn.addEventListener("click", writePassword);
