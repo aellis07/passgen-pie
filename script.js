@@ -109,6 +109,18 @@ function generatePassword() {
     special === false
   ) {
     alert("You must choose at least one parameter");
+    var lowercase = confirm(
+      "Click OK if you want to include lowercase characters"
+    );
+    var confirmNumericCharacter = confirm(
+      "Click OK if you want to include uppercase characters"
+    );
+    var confirmLowerCase = confirm(
+      "Click OK if you want to include numeric characters"
+    );
+    var confirmUpperCase = confirm(
+      "Click OK if you want to include special characters"
+    );
   }
 
   // Add event listener to generate button
