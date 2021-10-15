@@ -102,7 +102,13 @@ function generatePassword() {
   var number = confirm("Click OK if you want numbers");
   var special = confirm("Click OK if you want special characters ");
 
-  // Add event listener to generate button
-  // Carries out the function when the button is clicked
-  generateBtn.addEventListener("click", writePassword);
+  while (
+    lowercase === false &&
+    uppercase === false &&
+    number === false &&
+    special === false
+  )
+    // Add event listener to generate button
+    // Carries out the function when the button is clicked
+    generateBtn.addEventListener("click", writePassword);
 }
